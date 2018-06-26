@@ -1,0 +1,316 @@
+﻿<Window x:Class="HSM2.XemNangCao"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HSM2"
+        mc:Ignorable="d"
+        Title="XemNangCao" Height="600" Width="610" ResizeMode="NoResize" WindowStyle="None"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+     TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+     TextElement.FontWeight="Regular" BorderThickness="5" BorderBrush="Black"
+     TextElement.FontSize="13"
+     TextOptions.TextFormattingMode="Ideal"
+     TextOptions.TextRenderingMode="Auto"
+     Background="{DynamicResource MaterialDesignPaper}"
+     FontFamily="{DynamicResource MaterialDesignFont}">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush  ImageSource="image/12010723_920098198083069_7116087593207670173_o.jpg"></ImageBrush>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="12*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <materialDesign:ColorZone Background="Black" MouseDown="TitleBar_OnMouseDown" Name="TitleBar" Grid.Row="0"
+  Mode="Inverted" Height="40">
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <TextBlock VerticalAlignment="Center" Margin="15,0,0,0" HorizontalAlignment="Left" Grid.Column="0"
+                           Style="{StaticResource MaterialDesignHeadlineTextBlock}">
+                    Xem nâng cao
+                </TextBlock>
+                <StackPanel Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Center" Height="30"
+                            Orientation="Horizontal">
+
+                    <Button Name="btThuNho" materialDesign:RippleAssist.IsDisabled="True" BorderBrush="Black" Background="Black" ToolTip="Thu nhỏ" Margin="0,0,5,0" HorizontalAlignment="Right" Click="btThuNho_Click" MouseEnter="btThuNho_MouseEnter" MouseLeave="btThuNho_MouseLeave">
+                        <materialDesign:PackIcon Kind="WindowMinimize"></materialDesign:PackIcon>
+                    </Button>
+                    <Button Name="btDong" materialDesign:RippleAssist.IsDisabled="True" BorderBrush="Black" Background="Black" ToolTip="Đóng" Margin="0,0,5,0" HorizontalAlignment="Right" Click="btDong_Click" MouseEnter="btDong_MouseEnter" MouseLeave="btDong_MouseLeave">
+                        <materialDesign:PackIcon Kind="WindowClose"></materialDesign:PackIcon>
+                    </Button>
+                </StackPanel>
+            </Grid>
+
+        </materialDesign:ColorZone>
+        <Grid Grid.Row="1" Margin="12">
+            <materialDesign:Card VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Opacity="0.9">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <StackPanel HorizontalAlignment="Right" Margin="0,0,10,0" Grid.Row="0" Orientation="Horizontal">
+                        <TextBlock VerticalAlignment="Bottom"
+    Style="{StaticResource MaterialDesignTitleTextBlock}">  Toán:</TextBlock>
+                        <TextBox TextChanged="Toan15_TextChanged" LostFocus="Toan15_LostFocus" GotFocus="Toan15_GotFocus" Name="Toan15" Width="100" Margin="5,0,5,0" Text="0"
+  materialDesign:HintAssist.Hint="15 phút"
+  Style="{StaticResource MaterialDesignFloatingHintTextBox}" >
+
+                        </TextBox>
+                        <TextBox TextChanged="Toan45_TextChanged" LostFocus="Toan45_LostFocus" GotFocus="Toan45_GotFocus" Name="Toan45" Width="100" Margin="5,0,5,0" Text="0"
+  materialDesign:HintAssist.Hint="45 phút"
+  Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+                        <TextBox TextChanged="ToanHK_TextChanged" LostFocus="ToanHK_LostFocus" GotFocus="ToanHK_GotFocus" Name="ToanHK" Width="100" Margin="5,0,5,0"
+  materialDesign:HintAssist.Hint="Học kỳ" Text="0"
+  Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+                        <TextBox IsEnabled="False" Name="ToanTB" Width="100" Margin="5,0,5,0"
+  materialDesign:HintAssist.Hint="Trung bình"
+  Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+                    </StackPanel>
+
+                    <StackPanel HorizontalAlignment="Right" Margin="0,0,10,0" Grid.Row="1" Orientation="Horizontal">
+                        <TextBlock VerticalAlignment="Bottom"
+    Style="{StaticResource MaterialDesignTitleTextBlock}"> Ngữ văn:</TextBlock>
+                        <TextBox TextChanged="Van15_TextChanged" LostFocus="Van15_LostFocus" GotFocus="Van15_GotFocus" Name="Van15" Width="100" Margin="5,0,5,0" Text="0"
+  materialDesign:HintAssist.Hint="15 phút"
+  Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+                        <TextBox GotFocus="Van45_GotFocus" LostFocus="Van45_LostFocus" TextChanged="Van45_TextChanged" Name="Van45" Width="100" Margin="5,0,5,0" Text="0"
+  materialDesign:HintAssist.Hint="45 phút"
+  Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+                        <TextBox GotFocus="VanHK_GotFocus" LostFocus="VanHK_LostFocus" TextChanged="VanHK_TextChanged" Name="VanHK" Width="100" Margin="5,0,5,0"
+  materialDesign:HintAssist.Hint="Học kỳ" Text="0"
+  Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+                        <TextBox IsEnabled="False" Name="VanTB" Width="100" Margin="5,0,5,0"
+  materialDesign:HintAssist.Hint="Trung bình"
+  Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+                    </StackPanel>
+
+                    <StackPanel HorizontalAlignment="Right" Margin="0,0,10,0" Grid.Row="2" Orientation="Horizontal">
+                        <TextBlock VerticalAlignment="Bottom"
+    Style="{StaticResource MaterialDesignTitleTextBlock}">  Sinh:</TextBlock>
+                        <TextBox TextChanged="Sinh15_TextChanged" LostFocus="Sinh15_LostFocus" GotFocus="Sinh15_GotFocus" Name="Sinh15" Width="100" Margin="5,0,5,0" Text="0"
+  materialDesign:HintAssist.Hint="15 phút"
+  Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+                        <TextBox TextChanged="Sinh45_TextChanged" LostFocus="Sinh45_LostFocus" GotFocus="Sinh45_GotFocus" Name="Sinh45" Width="100" Margin="5,0,5,0" Text="0"
+  materialDesign:HintAssist.Hint="45 phút"
+  Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+                        <TextBox TextChanged="SinhHK_TextChanged" LostFocus="SinhHK_LostFocus" GotFocus="SinhHK_GotFocus" Name="SinhHK" Width="100" Margin="5,0,5,0"
+  materialDesign:HintAssist.Hint="Học kỳ" Text="0"
+  Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+                        <TextBox Name="SinhTB" IsEnabled="False"  Width="100" Margin="5,0,5,0"
+  materialDesign:HintAssist.Hint="Trung bình"
+  Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+                    </StackPanel>
+
+                    <StackPanel HorizontalAlignment="Right" Margin="0,0,10,0" Grid.Row="3" Orientation="Horizontal">
+                        <TextBlock VerticalAlignment="Bottom"
+    Style="{StaticResource MaterialDesignTitleTextBlock}">  Vật lý:</TextBlock>
+                        <TextBox TextChanged="VL15_TextChanged" LostFocus="VL15_LostFocus" GotFocus="VL15_GotFocus" Name="VL15" Width="100" Margin="5,0,5,0" Text="0"
+  materialDesign:HintAssist.Hint="15 phút"
+  Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+                        <TextBox TextChanged="VL45_TextChanged" LostFocus="VL45_LostFocus" GotFocus="VL45_GotFocus" Name="VL45" Width="100" Margin="5,0,5,0" Text="0"
+  materialDesign:HintAssist.Hint="45 phút"
+  Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+                        <TextBox TextChanged="VLHK_TextChanged" LostFocus="VLHK_LostFocus" GotFocus="VLHK_GotFocus" Name="VLHK" Width="100" Margin="5,0,5,0"
+  materialDesign:HintAssist.Hint="Học kỳ" Text="0"
+  Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+                        <TextBox Name="VLTB" IsEnabled="False"  Width="100" Margin="5,0,5,0"
+  materialDesign:HintAssist.Hint="Trung bình"
+  Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+                    </StackPanel>
+
+                    <StackPanel HorizontalAlignment="Right" Margin="0,0,10,0" Grid.Row="4" Orientation="Horizontal">
+                        <TextBlock VerticalAlignment="Bottom"
+    Style="{StaticResource MaterialDesignTitleTextBlock}">  Hóa:</TextBlock>
+                        <TextBox TextChanged="Hoa15_TextChanged" LostFocus="Hoa15_LostFocus" GotFocus="Hoa15_GotFocus" Name="Hoa15" Width="100" Margin="5,0,5,0" Text="0"
+  materialDesign:HintAssist.Hint="15 phút"
+  Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+                        <TextBox TextChanged="Hoa45_TextChanged" LostFocus="Hoa45_LostFocus" GotFocus="Hoa45_GotFocus" Name="Hoa45" Width="100" Margin="5,0,5,0" Text="0"
+  materialDesign:HintAssist.Hint="45 phút"
+  Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+                        <TextBox TextChanged="HoaHK_TextChanged" LostFocus="HoaHK_LostFocus" GotFocus="HoaHK_GotFocus" Name="HoaHK" Width="100" Margin="5,0,5,0"
+  materialDesign:HintAssist.Hint="Học kỳ" Text="0"
+  Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+                        <TextBox Name="HoaTB" IsEnabled="False"  Width="100" Margin="5,0,5,0"
+  materialDesign:HintAssist.Hint="Trung bình"
+  Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+                    </StackPanel>
+
+                    <StackPanel HorizontalAlignment="Right" Margin="0,0,10,0" Grid.Row="5" Orientation="Horizontal">
+                        <TextBlock VerticalAlignment="Bottom"
+    Style="{StaticResource MaterialDesignTitleTextBlock}">  Sử:</TextBlock>
+                        <TextBox TextChanged="Su15_TextChanged" LostFocus="Su15_LostFocus" GotFocus="Su15_GotFocus" Name="Su15" Width="100" Margin="5,0,5,0" Text="0"
+  materialDesign:HintAssist.Hint="15 phút"
+  Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+                        <TextBox TextChanged="Su45_TextChanged" LostFocus="Su45_LostFocus" GotFocus="Su45_GotFocus" Name="Su45" Width="100" Margin="5,0,5,0" Text="0"
+  materialDesign:HintAssist.Hint="45 phút"
+  Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+                        <TextBox TextChanged="SuHK_TextChanged" LostFocus="SuHK_LostFocus" GotFocus="SuHK_GotFocus" Name="SuHK" Width="100" Margin="5,0,5,0"
+  materialDesign:HintAssist.Hint="Học kỳ" Text="0"
+  Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+                        <TextBox Name="SuTB" IsEnabled="False"  Width="100" Margin="5,0,5,0"
+  materialDesign:HintAssist.Hint="Trung bình"
+  Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+                    </StackPanel>
+
+                    <StackPanel HorizontalAlignment="Right" Margin="0,0,10,0" Grid.Row="6" Orientation="Horizontal">
+                        <TextBlock VerticalAlignment="Bottom"
+    Style="{StaticResource MaterialDesignTitleTextBlock}">  Địa</TextBlock>
+                        <TextBox TextChanged="Dia15_TextChanged" LostFocus="Dia15_LostFocus" GotFocus="Dia15_GotFocus" Name="Dia15" Width="100" Margin="5,0,5,0" Text="0"
+  materialDesign:HintAssist.Hint="15 phút"
+  Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+                        <TextBox TextChanged="Dia45_TextChanged" LostFocus="Dia45_LostFocus" GotFocus="Dia45_GotFocus" Name="Dia45" Width="100" Margin="5,0,5,0" Text="0"
+  materialDesign:HintAssist.Hint="45 phút"
+  Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+                        <TextBox TextChanged="DiaHK_TextChanged" LostFocus="DiaHK_LostFocus" GotFocus="DiaHK_GotFocus" Name="DiaHK" Width="100" Margin="5,0,5,0"
+  materialDesign:HintAssist.Hint="Học kỳ" Text="0"
+  Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+                        <TextBox Name="DiaTB" IsEnabled="False"  Width="100" Margin="5,0,5,0"
+  materialDesign:HintAssist.Hint="Trung bình"
+  Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+                    </StackPanel>
+
+                    <StackPanel HorizontalAlignment="Right" Margin="0,0,10,0" Grid.Row="7" Orientation="Horizontal">
+                        <TextBlock VerticalAlignment="Bottom"
+    Style="{StaticResource MaterialDesignTitleTextBlock}">  Ngoại ngữ:</TextBlock>
+                        <TextBox TextChanged="NN15_TextChanged" LostFocus="NN15_LostFocus" GotFocus="NN15_GotFocus" Name="NN15" Width="100" Margin="5,0,5,0" Text="0"
+  materialDesign:HintAssist.Hint="15 phút"
+  Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+                        <TextBox TextChanged="NN45_TextChanged" LostFocus="NN45_LostFocus" GotFocus="NN45_GotFocus" Name="NN45" Width="100" Margin="5,0,5,0" Text="0"
+  materialDesign:HintAssist.Hint="45 phút"
+  Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+                        <TextBox TextChanged="NNHK_TextChanged" LostFocus="NNHK_LostFocus" GotFocus="NNHK_GotFocus" Name="NNHK" Width="100" Margin="5,0,5,0"
+  materialDesign:HintAssist.Hint="Học kỳ" Text="0"
+  Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+                        <TextBox Name="NNTB" IsEnabled="False"  Width="100" Margin="5,0,5,0"
+  materialDesign:HintAssist.Hint="Trung bình"
+  Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+                    </StackPanel>
+
+                    <StackPanel HorizontalAlignment="Right" Margin="0,0,10,0" Grid.Row="8" Orientation="Horizontal">
+                        <TextBlock VerticalAlignment="Bottom"
+    Style="{StaticResource MaterialDesignTitleTextBlock}">  Giáo dục CD:</TextBlock>
+                        <TextBox TextChanged="CD15_TextChanged" LostFocus="CD15_LostFocus" GotFocus="CD15_GotFocus" Name="CD15" Width="100" Margin="5,0,5,0" Text="0"
+  materialDesign:HintAssist.Hint="15 phút"
+  Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+                        <TextBox TextChanged="CD45_TextChanged" LostFocus="CD45_LostFocus" GotFocus="CD45_GotFocus" Name="CD45" Width="100" Margin="5,0,5,0" Text="0"
+  materialDesign:HintAssist.Hint="45 phút"
+  Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+                        <TextBox TextChanged="CDHK_TextChanged" LostFocus="CDHK_LostFocus" GotFocus="CDHK_GotFocus" Name="CDHK" Width="100" Margin="5,0,5,0"
+  materialDesign:HintAssist.Hint="Học kỳ" Text="0"
+  Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+                        <TextBox Name="CDTB" IsEnabled="False"  Width="100" Margin="5,0,5,0"
+  materialDesign:HintAssist.Hint="Trung bình"
+  Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+                    </StackPanel>
+
+                    <StackPanel HorizontalAlignment="Right" Margin="0,0,10,0" Grid.Row="9" Orientation="Horizontal">
+                        <TextBlock VerticalAlignment="Bottom"
+    Style="{StaticResource MaterialDesignTitleTextBlock}">  Giáo dục QP:</TextBlock>
+                        <TextBox TextChanged="QP15_TextChanged" LostFocus="QP15_LostFocus" GotFocus="QP15_GotFocus" Name="QP15" Width="100" Margin="5,0,5,0" Text="0"
+  materialDesign:HintAssist.Hint="15 phút"
+  Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+                        <TextBox TextChanged="QP45_TextChanged" LostFocus="QP45_LostFocus" GotFocus="QP45_GotFocus" Name="QP45" Width="100" Margin="5,0,5,0" Text="0"
+  materialDesign:HintAssist.Hint="45 phút"
+  Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+                        <TextBox TextChanged="QPHK_TextChanged" LostFocus="QPHK_LostFocus" GotFocus="QPHK_GotFocus" Name="QPHK" Width="100" Margin="5,0,5,0"
+  materialDesign:HintAssist.Hint="Học kỳ" Text="0"
+  Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+                        <TextBox Name="QPTB" IsEnabled="False"  Width="100" Margin="5,0,5,0"
+  materialDesign:HintAssist.Hint="Trung bình"
+  Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+                    </StackPanel>
+
+                    <StackPanel HorizontalAlignment="Right" Margin="0,0,10,0" Grid.Row="10" Orientation="Horizontal">
+                        <TextBlock VerticalAlignment="Bottom"
+    Style="{StaticResource MaterialDesignTitleTextBlock}"> Thể dục:</TextBlock>
+                        <TextBox TextChanged="TD15_TextChanged" LostFocus="TD15_LostFocus" GotFocus="TD15_GotFocus" Name="TD15" Width="100" Margin="5,0,5,0" Text="0"
+  materialDesign:HintAssist.Hint="15 phút"
+  Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+                        <TextBox TextChanged="TD45_TextChanged" LostFocus="TD45_LostFocus" GotFocus="TD45_GotFocus" Name="TD45" Width="100" Margin="5,0,5,0" Text="0"
+  materialDesign:HintAssist.Hint="45 phút"
+  Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+                        <TextBox TextChanged="TDHK_TextChanged" LostFocus="TDHK_LostFocus" GotFocus="TDHK_GotFocus" Name="TDHK" Width="100" Margin="5,0,5,0"
+  materialDesign:HintAssist.Hint="Học kỳ" Text="0"
+  Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+                        <TextBox Name="TDTB" IsEnabled="False"  Width="100" Margin="5,0,5,0"
+  materialDesign:HintAssist.Hint="Trung bình"
+  Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+                    </StackPanel>
+
+                    <StackPanel HorizontalAlignment="Right" Margin="0,0,10,0" Grid.Row="11" Orientation="Horizontal">
+                        <TextBlock VerticalAlignment="Bottom"
+    Style="{StaticResource MaterialDesignTitleTextBlock}">  Công nghệ</TextBlock>
+                        <TextBox TextChanged="CN15_TextChanged" LostFocus="CN15_LostFocus" GotFocus="CN15_GotFocus" Name="CN15" Width="100" Margin="5,0,5,0" Text="0"
+  materialDesign:HintAssist.Hint="15 phút"
+  Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+                        <TextBox TextChanged="CN45_TextChanged" LostFocus="CN45_LostFocus" GotFocus="CN45_GotFocus" Name="CN45" Width="100" Margin="5,0,5,0" Text="0"
+  materialDesign:HintAssist.Hint="45 phút"
+  Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+                        <TextBox TextChanged="CNHK_TextChanged" LostFocus="CNHK_LostFocus" GotFocus="CNHK_GotFocus" Name="CNHK" Width="100" Margin="5,0,5,0"
+  materialDesign:HintAssist.Hint="Học kỳ" Text="0"
+  Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+                        <TextBox Name="CNTB" IsEnabled="False"  Width="100" Margin="5,0,5,0"
+  materialDesign:HintAssist.Hint="Trung bình"
+  Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+                    </StackPanel>
+
+                    <StackPanel HorizontalAlignment="Right" Margin="0,0,10,0" Grid.Row="12" Orientation="Horizontal">
+                        <TextBlock VerticalAlignment="Bottom"
+    Style="{StaticResource MaterialDesignTitleTextBlock}">  Tin học:</TextBlock>
+                        <TextBox TextChanged="TH15_TextChanged" LostFocus="TH15_LostFocus" GotFocus="TH15_GotFocus" Name="TH15" Width="100" Margin="5,0,5,0" Text="0"
+  materialDesign:HintAssist.Hint="15 phút"
+  Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+                        <TextBox TextChanged="TH45_TextChanged" LostFocus="TH45_LostFocus" GotFocus="TH45_GotFocus" Name="TH45" Width="100" Margin="5,0,5,0" Text="0"
+  materialDesign:HintAssist.Hint="45 phút"
+  Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+                        <TextBox TextChanged="THHK_TextChanged" LostFocus="THHK_LostFocus" GotFocus="THHK_GotFocus" Name="THHK" Width="100" Margin="5,0,5,0"
+  materialDesign:HintAssist.Hint="Học kỳ" Text="0"
+  Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+                        <TextBox Name="THTB" IsEnabled="False"  Width="100" Margin="5,0,5,0"
+  materialDesign:HintAssist.Hint="Trung bình"
+  Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+                    </StackPanel>
+
+                    <Grid Grid.Row="13">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Button  Grid.Column="0"
+    Style="{StaticResource MaterialDesignRaisedAccentButton}"
+    Width="100"
+    ToolTip="Thêm học sinh" Name="btSua" Click="btSua_Click">
+                            Sửa
+                        </Button>
+                        <Button Name="btHuy"  Grid.Column="1"
+    Style="{StaticResource MaterialDesignRaisedAccentButton}"
+    Width="100" Background="DarkRed" BorderBrush="DarkRed"
+    ToolTip="Hủy bỏ thêm" Click="btHuy_Click">
+                            Hủy
+                        </Button>
+                    </Grid>
+
+                </Grid>
+            </materialDesign:Card>
+        </Grid>
+    </Grid>
+</Window>

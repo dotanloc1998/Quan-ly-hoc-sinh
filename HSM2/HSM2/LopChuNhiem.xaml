@@ -1,0 +1,343 @@
+﻿<UserControl x:Class="HSM2.LopChuNhiem"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:HSM2"
+             mc:Ignorable="d" 
+             d:DesignHeight="800" d:DesignWidth="800"
+             
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+     TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+     TextElement.FontWeight="Regular"
+     TextElement.FontSize="13"
+     TextOptions.TextFormattingMode="Ideal"
+     TextOptions.TextRenderingMode="Auto"
+     Background="{DynamicResource MaterialDesignPaper}" 
+     FontFamily="{DynamicResource MaterialDesignFont}" >
+    <Grid>
+        <Grid>
+            <Grid.Background>
+                <ImageBrush x:Name="hinh4" ></ImageBrush>
+            </Grid.Background>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="7*"></RowDefinition>
+                <RowDefinition Height="0.5*"></RowDefinition>
+                <RowDefinition Height="5*"></RowDefinition>
+                <RowDefinition Height="1.5*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid Margin="10,0,10,0" Grid.Row="0">
+
+                <materialDesign:Card  HorizontalAlignment="Stretch" VerticalAlignment="Center" Opacity="0.84" >
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="2*"></ColumnDefinition>
+                            <ColumnDefinition Width="0.5*"></ColumnDefinition>
+                            <ColumnDefinition Width="8*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Grid Grid.Column="0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition></RowDefinition>
+                                <RowDefinition></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Image Name="imgForChange" Margin="15" VerticalAlignment="Top" Grid.Column="0"  Height="150" Width="112.5"/>
+                            <materialDesign:Badged Grid.Row="1" VerticalAlignment="Bottom" HorizontalAlignment="Center"
+  x:Name="CountingBadge"
+  BadgeColorZoneMode="PrimaryDark">
+                               
+                            </materialDesign:Badged>
+                        </Grid>
+                        <Grid Grid.Column="1">
+                            <Separator  Margin="0,20,0,20" Height="40" HorizontalAlignment="Center">
+                                <Separator.Effect>
+                                    <DropShadowEffect BlurRadius="6" Direction="10" RenderingBias="Quality" ShadowDepth="5 "></DropShadowEffect>
+                                </Separator.Effect>
+                                <Separator.LayoutTransform>
+                                    <RotateTransform Angle="90" />
+                                </Separator.LayoutTransform>
+                            </Separator>
+                        </Grid>
+                        <Grid Margin="5" Grid.Column="2">
+                            <Grid.RowDefinitions>
+                                <RowDefinition></RowDefinition>
+                                <RowDefinition></RowDefinition>
+                                <RowDefinition></RowDefinition>
+                                <RowDefinition></RowDefinition>
+                                <RowDefinition></RowDefinition>
+                                <RowDefinition></RowDefinition>
+                                <RowDefinition></RowDefinition>
+                                <RowDefinition></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Grid Grid.Row="0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition></ColumnDefinition>
+                                    <ColumnDefinition Width="10*"></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+                                <materialDesign:PackIcon Opacity="0.65" Kind="Account" Width="25" Height="35"  Grid.Column="0" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="5"/>
+                                <TextBox  IsEnabled="False" Name="txtMaHS" Grid.Column="1" FontSize="17" FontWeight="Bold"
+  materialDesign:HintAssist.Hint="Mã số học sinh"
+  Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+                            </Grid>
+
+                            <Grid Grid.Row="1">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition></ColumnDefinition>
+                                    <ColumnDefinition Width="10*"></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+                                <materialDesign:PackIcon Kind="RenameBox" Width="25" Height="35"  Grid.Column="0" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="5"/>
+
+                                <TextBox Name="txtHoTenHS" Grid.Column="1" FontSize="17" FontWeight="Bold"
+  materialDesign:HintAssist.Hint="Họ tên"
+  Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+                            </Grid>
+
+                            <Grid Grid.Row="2">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition></ColumnDefinition>
+                                    <ColumnDefinition Width="10*"></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+                                <Image Source="image/calendar-blank.png" Width="25" Height="35"  Grid.Column="0" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="5"></Image>
+
+                                <DatePicker Name="dpNgaySinhHS" Grid.Column="1" FontSize="17" FontWeight="Bold"
+  materialDesign:HintAssist.Hint="Ngày sinh" Height="28" VerticalAlignment="Bottom"
+  Style="{StaticResource MaterialDesignFloatingHintDatePicker}" />
+                            </Grid>
+
+                            <Grid Grid.Row="3">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition></ColumnDefinition>
+                                    <ColumnDefinition Width="10*"></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+                                <materialDesign:PackIcon Width="25" Height="35"  Grid.Column="0" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="5" Kind="Approval" />
+                                <TextBox Name="txtHanhKiem" Grid.Column="1" FontSize="17" FontWeight="Bold"
+  materialDesign:HintAssist.Hint="Xếp loại hạnh kiểm"
+  Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+                            </Grid>
+
+                            <Grid Grid.Row="4">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition></ColumnDefinition>
+                                    <ColumnDefinition Width="10*"></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+                                <Image Source="image/map-marker.png" Width="25" Height="35"  Grid.Column="0" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="5"></Image>
+
+                                <TextBox Name="txtDiaChiHS" Grid.Column="1" FontSize="17" FontWeight="Bold"
+  materialDesign:HintAssist.Hint="Địa chỉ"
+  Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+                            </Grid>
+
+                            <Grid Grid.Row="5">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition></ColumnDefinition>
+                                    <ColumnDefinition Width="10*"></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+                                <Image Opacity="0.55" Source="image/school.png" Width="25" Height="35"  Grid.Column="0" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="5"></Image>
+                                <TextBox IsEnabled="False" Name="txtHocLuc" Grid.Column="1" FontSize="17" FontWeight="Bold"
+  materialDesign:HintAssist.Hint="Xếp loại học lực"
+  Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+                            </Grid>
+
+                            <Grid Grid.Row="6">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition></ColumnDefinition>
+                                    <ColumnDefinition Width="10*"></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+                                <materialDesign:PackIcon Kind="Home" Width="25" Height="35"  Grid.Column="0" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="5"/>
+
+                                <TextBox Name="txtQueQuanHS" Grid.Column="1" FontSize="17" FontWeight="Bold"
+  materialDesign:HintAssist.Hint="Quê quán"
+  Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+                            </Grid>
+
+                            <Grid Grid.Row="7">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition></ColumnDefinition>
+                                    <ColumnDefinition Width="10*"></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+                                <Image Grid.Column="0" Source="image/book-open-page-variant.png" Width="25" Height="35" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="5"></Image>
+
+                                <Grid Grid.Column="1">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition></ColumnDefinition>
+                                        <ColumnDefinition Width="2.5*"></ColumnDefinition>
+                                    </Grid.ColumnDefinitions>
+                                    <ComboBox Margin="0,0,5,0" Name="cbMonHS" VerticalAlignment="Bottom"  Grid.Column="0"
+  materialDesign:HintAssist.Hint="Môn"  FontWeight="Bold"
+  IsEditable="True"
+  Style="{StaticResource MaterialDesignFloatingHintComboBox}"  DropDownClosed="cbMonHS_DropDownClosed">
+                                    </ComboBox>
+
+                                    <Grid Grid.Column="1">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition ></ColumnDefinition>
+                                            <ColumnDefinition></ColumnDefinition>
+                                            <ColumnDefinition></ColumnDefinition>
+                                            <ColumnDefinition ></ColumnDefinition>
+                                            <ColumnDefinition Width="0.5*"></ColumnDefinition>
+                                        </Grid.ColumnDefinitions>
+
+                                        <TextBox LostFocus="txtDiem15_LostFocus" TextChanged="txtDiem15_TextChanged" Margin="5,0,5,0" Name="txtDiem15" VerticalAlignment="Bottom" Grid.Column="0"
+  materialDesign:HintAssist.Hint="Điểm 15" FontSize="15" FontWeight="Bold"
+  Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+
+                                        <TextBox LostFocus="txtDiem45_LostFocus" TextChanged="txtDiem45_TextChanged" Margin="0,0,5,0" Name="txtDiem45" VerticalAlignment="Bottom" Grid.Column="1"
+  materialDesign:HintAssist.Hint="Điểm 45"  FontSize="15" FontWeight="Bold"
+  Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+
+                                        <TextBox LostFocus="txtDiemHK_LostFocus" TextChanged="txtDiemHK_TextChanged" Margin="0,0,5,0" Name="txtDiemHK" VerticalAlignment="Bottom" Grid.Column="2"
+  materialDesign:HintAssist.Hint="Điểm HK"  FontSize="15" FontWeight="Bold"
+  Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+
+                                        <TextBox  IsEnabled="False" Margin="0,0,5,0" Name="txtDiemTBM" VerticalAlignment="Bottom" Grid.Column="3"
+  materialDesign:HintAssist.Hint="Điểm TB" FontSize="15" FontWeight="Bold"
+  Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+
+                                        <Button Name="btXemNangCao" Grid.Column="4" VerticalAlignment="Bottom" Background="OrangeRed" Style="{StaticResource MaterialDesignRaisedLightButton}" ToolTip="Xem nâng cao" Click="btXemNangCao_Click">
+                                            <materialDesign:PackIcon Padding="0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Kind="Grid" Width="11" Height="19" />
+                                        </Button>
+                                    </Grid>
+                                </Grid>
+                            </Grid>
+
+                        </Grid>
+                    </Grid>
+                </materialDesign:Card>
+
+            </Grid>
+            <Grid Height="10" Grid.Row="1">
+                <Grid.Effect>
+                    <DropShadowEffect BlurRadius="15" Direction="-90" RenderingBias="Quality" ShadowDepth="2"/>
+                </Grid.Effect>
+                <Separator VerticalAlignment="Bottom" ></Separator>
+            </Grid>
+            <Grid Grid.Row="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition Height="6*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Button Grid.Row="0"  Name="btIn" VerticalAlignment="Center" HorizontalAlignment="Left" Width="50" Margin="20,0,0,0" Background="Black" BorderBrush="White" Click="btIn_Click" >
+                    <materialDesign:PackIcon Kind="Printer" />
+                </Button>
+
+                <Button Grid.Row="0"  Name="btCapNhatDiem" VerticalAlignment="Center" HorizontalAlignment="Left" Width="50" Margin="100,0,0,0" Background="#dc4b5f" BorderBrush="White" Click="btCapNhatDiem_Click" >
+                    <materialDesign:PackIcon Kind="Refresh" />
+                </Button>
+                <StackPanel HorizontalAlignment="Right" Grid.Row="0" Orientation="Horizontal">
+                    <TextBox Name="tbTim" Margin="0,0,10,0" Opacity="0.7" Background="White" VerticalAlignment="Center" Width="200" TextChanged="tbTim_TextChanged"></TextBox>
+                    <Button BorderBrush="{x:Null}" Background="LightGray" Name="btTim" Margin="0,0,10,0" VerticalAlignment="Center" Click="btTim_Click">
+                        <Image HorizontalAlignment="Center" Height="24" Width="18" Source="image/magnify.png">
+                            <Image.Effect>
+                                <DropShadowEffect Direction="25" Color="#FFB6C2CB" ShadowDepth="2" BlurRadius="1" />
+                            </Image.Effect>
+                        </Image>
+                    </Button>
+                </StackPanel>
+                
+                <DataGrid Opacity="0.84" HorizontalAlignment="Stretch" Name="dtHocSinh" Grid.Row="1"
+                Margin="10,0,10,0"
+                ItemsSource="{Binding THocSinhs}"                
+                CanUserSortColumns="True"
+                CanUserAddRows="False"
+                AutoGenerateColumns="False"
+                materialDesign:DataGridAssist.CellPadding="13 8 8 8"
+                materialDesign:DataGridAssist.ColumnHeaderPadding="8" SelectionChanged="dtHocSinh_SelectionChanged">
+                    <DataGrid.RowStyle>
+                        <Style TargetType="{x:Type DataGridRow}">
+                            <Setter Property="IsSelected" Value="{Binding IsSelected, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                        </Style>
+                    </DataGrid.RowStyle>
+                    <DataGrid.Columns>
+                        <materialDesign:MaterialDataGridTextColumn >
+                            <DataGridTextColumn.HeaderStyle>
+                                <Style
+          TargetType="{x:Type DataGridColumnHeader}"
+          BasedOn="{StaticResource MaterialDesignDataGridColumnHeader}">
+                                    <Setter
+            Property="HorizontalAlignment"
+            Value="Center" />
+                                </Style>
+                            </DataGridTextColumn.HeaderStyle>
+                            <DataGridTextColumn.ElementStyle>
+                                <Style
+          TargetType="{x:Type TextBlock}">
+                                    <Setter
+            Property="HorizontalAlignment"
+            Value="Center" />
+                                </Style>
+                            </DataGridTextColumn.ElementStyle>
+                        </materialDesign:MaterialDataGridTextColumn>
+
+                        <materialDesign:MaterialDataGridTextColumn
+      Binding="{Binding MaSoHS}"
+      Header="Mã học sinh"
+      EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnEditingStyle}" />
+
+                        <materialDesign:MaterialDataGridTextColumn
+      Binding="{Binding HoTen}"
+      Header="Họ tên"
+      EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}" />
+
+                        <materialDesign:MaterialDataGridTextColumn
+      Binding="{Binding NgaySinh}"
+      Header="Ngày sinh"      
+      EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}" />
+
+                        <materialDesign:MaterialDataGridTextColumn 
+      Header="Hạnh kiểm"
+      Binding="{Binding XLHanhKiem}"  
+      EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}"/>
+
+                        <materialDesign:MaterialDataGridTextColumn 
+      Header="Địa chỉ"
+      Binding="{Binding DiaChi}"  
+      EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}"/>
+
+                        <materialDesign:MaterialDataGridTextColumn 
+      Header="Học lực" 
+      Binding="{Binding XLHocLuc}"  
+      EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}" />
+
+                        <materialDesign:MaterialDataGridTextColumn 
+      Header="Quê quán" 
+      Binding="{Binding QueQuan}"  
+      EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}" />
+
+
+
+
+                        <materialDesign:MaterialDataGridTextColumn
+      Binding="{Binding DiemTBCuaHS}"
+      Header="Điểm TB"
+      EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnEditingStyle}" />
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Grid>
+           
+            <Grid Grid.Row="3">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Button  Name="btThem" Grid.Column="0"
+                    Style="{StaticResource MaterialDesignRaisedAccentButton}"
+                    Width="100"
+                    ToolTip="Thêm học sinh" Click="btThem_Click">
+                    Thêm
+                </Button>
+                <Button BorderBrush="DarkRed" Background="DarkRed" Name="btXoa" Grid.Column="1"
+                    Style="{StaticResource MaterialDesignRaisedDarkButton}"
+                    Width="100"
+                    ToolTip="Xóa học sinh" Click="btXoa_Click">
+                    Xóa
+                </Button>
+                <Button BorderBrush="MediumPurple" Background="MediumPurple" Name="btSua" Grid.Column="2"
+                    Style="{StaticResource MaterialDesignRaisedDarkButton}"
+                    Width="100"
+                    ToolTip="Sửa thông tin" Click="btSua_Click">
+                    Sửa
+                </Button>
+            </Grid>
+        </Grid>
+    </Grid>
+</UserControl>

@@ -1,0 +1,416 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{274084AA-C768-4A10-9114-48DC30EEA9AE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>HSM2</RootNamespace>
+    <AssemblyName>HSM2</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>124832_XaT_icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ControlzEx, Version=3.0.2.4, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ControlzEx.3.0.2.4\lib\net45\ControlzEx.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="MahApps.Metro, Version=1.6.1.4, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MahApps.Metro.1.6.1\lib\net45\MahApps.Metro.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialDesignColors, Version=1.1.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialDesignColors.1.1.3\lib\net45\MaterialDesignColors.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialDesignThemes.MahApps, Version=0.0.11.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialDesignThemes.MahApps.0.0.11\lib\net45\MaterialDesignThemes.MahApps.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialDesignThemes.Wpf, Version=2.4.0.1044, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialDesignThemes.2.4.0.1044\lib\net45\MaterialDesignThemes.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="ReachFramework" />
+    <Reference Include="sapbusinessobjects.wpf.viewer, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="SAPBusinessObjects.WPF.ViewerShared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Printing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\ControlzEx.3.0.2.4\lib\net45\System.Windows.Interactivity.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Admin.xaml.cs">
+      <DependentUpon>Admin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AdminDangNhap.xaml.cs">
+      <DependentUpon>AdminDangNhap.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AdminXoa.xaml.cs">
+      <DependentUpon>AdminXoa.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CaiDat.xaml.cs">
+      <DependentUpon>CaiDat.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ChonLoaiXemAdmin.xaml.cs">
+      <DependentUpon>ChonLoaiXemAdmin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ChonLop.xaml.cs">
+      <DependentUpon>ChonLop.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CSDL\DangNhap.cs" />
+    <Compile Include="CSDL\Diem.cs" />
+    <Compile Include="CSDL\DuongDan.cs" />
+    <Compile Include="CSDL\GhiNhoDangNhap.cs" />
+    <Compile Include="CSDL\GiaoVien.cs" />
+    <Compile Include="CSDL\GiaoVienDayHocSinh.cs" />
+    <Compile Include="CSDL\HocSinh.cs" />
+    <Compile Include="CSDL\HocSinhView.cs" />
+    <Compile Include="CSDL\LichSuChinhSua.cs" />
+    <Compile Include="CSDL\LoaiDiemCuaTungMon.cs" />
+    <Compile Include="CSDL\LuuTruDiemHSSua.cs" />
+    <Compile Include="CSDL\LuuTruDiemHSXoa.cs" />
+    <Compile Include="CSDL\LuuTruHSSua.cs" />
+    <Compile Include="CSDL\LuuTruHSXoa.cs" />
+    <Compile Include="CSDL\LuuTruLoaiDiemHSSua.cs" />
+    <Compile Include="CSDL\LuuTruLoaiDiemHSXoa.cs" />
+    <Compile Include="CSDL\LuuTruThongTinGVSua.cs" />
+    <Compile Include="CSDL\MonHoc.cs" />
+    <Compile Include="CSDL\MyEntity.cs" />
+    <Compile Include="CuaSoChinh.xaml.cs">
+      <DependentUpon>CuaSoChinh.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GiaoDienInThongTin.xaml.cs">
+      <DependentUpon>GiaoDienInThongTin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="InGiaoVien.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InGiaoVien.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="InLopChuNhiem.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InLopChuNhiem.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LopChuNhiem.xaml.cs">
+      <DependentUpon>LopChuNhiem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LopDay.xaml.cs">
+      <DependentUpon>LopDay.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805292305053_create-db.cs" />
+    <Compile Include="Migrations\201805292305053_create-db.Designer.cs">
+      <DependentUpon>201805292305053_create-db.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="QuenMatKhau.xaml.cs">
+      <DependentUpon>QuenMatKhau.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ThemDiem.xaml.cs">
+      <DependentUpon>ThemDiem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ThemHocSinh.xaml.cs">
+      <DependentUpon>ThemHocSinh.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ThongTinGiaoVien.xaml.cs">
+      <DependentUpon>ThongTinGiaoVien.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VeChungToi.xaml.cs">
+      <DependentUpon>VeChungToi.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="XemNangCao.xaml.cs">
+      <DependentUpon>XemNangCao.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Admin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AdminDangNhap.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AdminXoa.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CaiDat.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ChonLoaiXemAdmin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ChonLop.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CuaSoChinh.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="DangKy.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GiaoDienInThongTin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LopChuNhiem.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LopDay.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DangKy.xaml.cs">
+      <DependentUpon>DangKy.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="QuenMatKhau.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ThemDiem.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ThemHocSinh.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ThongTinGiaoVien.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="VeChungToi.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="XemNangCao.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MDesign\FutureDateValidationRule.cs" />
+    <Compile Include="MDesign\NotEmptyValidationRule.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="InGiaoVien.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>InGiaoVien.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InLopChuNhiem.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>InLopChuNhiem.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805292305053_create-db.resx">
+      <DependentUpon>201805292305053_create-db.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\FotoFlexer_Photo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\map-marker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\calendar-blank.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\book-open-page-variant.png" />
+    <Resource Include="image\currency-usd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\lead-pencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\22-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\22-512 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\school.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\backburger.png" />
+    <Resource Include="image\menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\1370747803465.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\51_big.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\blackboard.png" />
+    <Resource Include="image\briefcase.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\about-icon-slate2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\Dtafalonso-Android-Lollipop-Settings.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\professor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\minus-math.png" />
+    <Resource Include="image\plus-big-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\12010723_920098198083069_7116087593207670173_o.jpg" />
+    <Resource Include="image\1403426_530014467091446_1823878259_o.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\tv1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="124832_XaT_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\145-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\magnify.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\outside-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\skull.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\gears-of-war-4-wallpapers-1080p-On-Wallpaper-1080p-HD-1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

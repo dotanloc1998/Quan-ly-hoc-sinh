@@ -1,0 +1,164 @@
+﻿<UserControl x:Class="HSM2.Admin"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:HSM2"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800" 
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+     TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+     TextElement.FontWeight="Regular"
+     TextElement.FontSize="13"
+     TextOptions.TextFormattingMode="Ideal"
+     TextOptions.TextRenderingMode="Auto"
+     Background="{DynamicResource MaterialDesignPaper}"
+     FontFamily="{DynamicResource MaterialDesignFont}">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="image/gears-of-war-4-wallpapers-1080p-On-Wallpaper-1080p-HD-1.png" ></ImageBrush>
+        </Grid.Background>
+        <materialDesign:Card VerticalAlignment="Stretch" Opacity="0.8" HorizontalAlignment="Stretch" Margin="10">
+            <Grid >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <Grid Grid.Column="0" Grid.Row="0">
+                    <DataGrid Grid.Row="1" Name="dtLichSuChinhSua"
+  CanUserSortColumns="True"
+  CanUserAddRows="False"
+  AutoGenerateColumns="False"
+  materialDesign:DataGridAssist.CellPadding="13 8 8 8"
+  materialDesign:DataGridAssist.ColumnHeaderPadding="6" SelectionChanged="dtLichSuChinhSua_SelectionChanged">
+                        <DataGrid.Columns>
+
+                            <DataGridTextColumn
+      Binding="{Binding MaChinhSua}"
+      Header="Mã chỉnh sửa"
+      EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnEditingStyle}" />
+                            <DataGridTextColumn
+      Binding="{Binding ThoiGianChinhSua}"
+      Header="Thời gian"
+      EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnEditingStyle}" />
+                            <DataGridTextColumn
+      Binding="{Binding MaGVSua}"
+      Header="Mã GV sửa"
+      EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnEditingStyle}" />
+
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+
+                <DataGrid Grid.Row="0" Grid.Column="1" Name="dtLuuHocSinh"
+  CanUserSortColumns="True"
+  CanUserAddRows="False"
+  AutoGenerateColumns="False"
+  materialDesign:DataGridAssist.CellPadding="13 8 8 8"
+  materialDesign:DataGridAssist.ColumnHeaderPadding="6" SelectionChanged="dtLuuHocSinh_SelectionChanged">
+                    <DataGrid.Columns>
+
+                        <DataGridTextColumn
+      Binding="{Binding MaSua}"
+      Header="Mã sửa"
+      EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnEditingStyle}" />
+                        <DataGridTextColumn
+      Binding="{Binding MaSoHSSua}"
+      Header="Mã số HS"
+      EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnEditingStyle}" />
+                        <DataGridTextColumn
+      Binding="{Binding HoTenSua}"
+      Header="Họ tên HS"
+      EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnEditingStyle}" />
+
+                        <DataGridTextColumn
+      Binding="{Binding DiaChiSua}"
+      Header="Địa chỉ HS"
+      EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnEditingStyle}" />
+                        <DataGridTextColumn
+      Binding="{Binding NgaySinhSua}"
+      Header="Ngày sinh HS"
+      EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnEditingStyle}" />
+                        <DataGridTextColumn
+      Binding="{Binding XLHocLucSua}"
+      Header="Học lực"
+      EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnEditingStyle}" />
+                        <DataGridTextColumn
+      Binding="{Binding XLHanhKiemSua}"
+      Header="Hạnh kiểm"
+      EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnEditingStyle}" />
+                        <DataGridTextColumn
+      Binding="{Binding QueQuanSua}"
+      Header="Quê quán"
+      EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnEditingStyle}" />
+                        <DataGridTextColumn
+      Binding="{Binding LopCuaHSSua}"
+      Header="Lớp của HS"
+      EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnEditingStyle}" />
+                        <DataGridTextColumn
+      Binding="{Binding DiemTBCuaHSSua}"
+      Header="ĐTB"
+      EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnEditingStyle}" />
+                        <DataGridTextColumn
+      Binding="{Binding MaChinhSuaCuaLuuTru}"
+      Header="Mã chỉnh sửa"
+      EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnEditingStyle}" />
+                    </DataGrid.Columns>
+                </DataGrid>
+
+                <DataGrid Grid.Row="1" Grid.Column="1" Name="dtLuuLoaiDiemHocSinh"
+  CanUserSortColumns="True"
+  CanUserAddRows="False"
+  AutoGenerateColumns="False"
+  materialDesign:DataGridAssist.CellPadding="13 8 8 8"
+  materialDesign:DataGridAssist.ColumnHeaderPadding="6">
+                    <DataGrid.Columns>
+
+                        <DataGridTextColumn
+      Binding="{Binding MaLoaiDiemSua}"
+      Header="Mã loại điểm"
+      EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnEditingStyle}" />
+                        <DataGridTextColumn
+      Binding="{Binding SoDiemSua}"
+      Header="Số điểm"
+      EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnEditingStyle}" />
+                        <DataGridTextColumn
+      Binding="{Binding MaDiemCuaLoaiDiemSua}"
+      Header="Mã Loại điểm"
+      EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnEditingStyle}" />
+
+                    </DataGrid.Columns>
+                </DataGrid>
+
+                <DataGrid Grid.Row="1" Grid.Column="0" Name="dtLuuDiemHocSinh"
+  CanUserSortColumns="True"
+  CanUserAddRows="False"
+  AutoGenerateColumns="False"
+  materialDesign:DataGridAssist.CellPadding="13 8 8 8"
+  materialDesign:DataGridAssist.ColumnHeaderPadding="6" SelectionChanged="dtLuuDiemHocSinh_SelectionChanged">
+                    <DataGrid.Columns>
+
+                        <DataGridTextColumn
+      Binding="{Binding MaDiemSua}"
+      Header="Mã điểm sửa"
+      EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnEditingStyle}" />
+                        <DataGridTextColumn
+      Binding="{Binding SoDiemSua}"
+      Header="Số điểm sửa"
+      EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnEditingStyle}" />
+                        <DataGridTextColumn
+      Binding="{Binding MaHSCuaDiemSua}"
+      Header="Mã học sinh"
+      EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnEditingStyle}" />
+
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Grid>
+        </materialDesign:Card>
+    </Grid>
+</UserControl>

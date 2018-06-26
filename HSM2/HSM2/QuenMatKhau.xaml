@@ -1,0 +1,84 @@
+﻿<Window x:Class="HSM2.QuenMatKhau"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HSM2"
+        mc:Ignorable="d" WindowStyle="None" ResizeMode="NoResize" BorderBrush="Black" BorderThickness="5"
+        Title="QuenMatKhau" Height="300" Width="500"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+     TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+     TextElement.FontWeight="Regular"
+     TextElement.FontSize="13" WindowStartupLocation="CenterScreen"
+     TextOptions.TextFormattingMode="Ideal"
+     TextOptions.TextRenderingMode="Auto"
+     Background="{DynamicResource MaterialDesignPaper}"
+     FontFamily="{DynamicResource MaterialDesignFont}">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="6.5*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <materialDesign:ColorZone Background="Black" MouseDown="TitleBar_OnMouseDown" Name="TitleBar" Grid.Row="0"
+  Mode="Inverted" Height="40">
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Left" Grid.Column="0" Margin="10,0,0,0"
+                           Style="{StaticResource MaterialDesignHeadlineTextBlock}">
+                    Quên mật khẩu
+                </TextBlock>
+                <StackPanel Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Center" Height="30"
+                            Orientation="Horizontal">
+
+                    <Button Name="btThuNho" materialDesign:RippleAssist.IsDisabled="True" BorderBrush="Black" Background="Black" ToolTip="Thu nhỏ" Margin="0,0,5,0" HorizontalAlignment="Right" Click="btThuNho_Click" MouseEnter="btThuNho_MouseEnter" MouseLeave="btThuNho_MouseLeave">
+                        <materialDesign:PackIcon Kind="WindowMinimize"></materialDesign:PackIcon>
+                    </Button>
+                    <Button Name="btDong" materialDesign:RippleAssist.IsDisabled="True" BorderBrush="Black" Background="Black" ToolTip="Đóng" Margin="0,0,5,0" HorizontalAlignment="Right" Click="btDong_Click" MouseEnter="btDong_MouseEnter" MouseLeave="btDong_MouseLeave">
+                        <materialDesign:PackIcon Kind="WindowClose"></materialDesign:PackIcon>
+                    </Button>
+                </StackPanel>
+            </Grid>
+
+        </materialDesign:ColorZone>
+        <Grid Grid.Row="1">
+            <Grid.Background>
+                <ImageBrush x:Name="hinh1QuenMK" Opacity="0.4"></ImageBrush>
+            </Grid.Background>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <TextBox FontSize="20" Name="tbTenTaiKhoan" Margin="10" Grid.Row="0"
+  materialDesign:HintAssist.Hint="Mã số giáo viên"
+  Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+
+            <PasswordBox FontSize="20" Grid.Row="1" Margin="10"
+  x:Name="tbMaPin"
+  materialDesign:HintAssist.Hint="Mã Pin của tài khoản" />
+            
+            <Grid Grid.Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Button Name="btDongY" Grid.Column="0"
+    Style="{StaticResource MaterialDesignRaisedAccentButton}"
+    Width="100"
+    ToolTip="Tìm mật khẩu" Click="btDongY_Click">
+                    Đồng ý
+                </Button>
+                <Button BorderBrush="DarkRed" Background="DarkRed" Name="btHuy" Grid.Column="1"
+    Style="{StaticResource MaterialDesignRaisedAccentButton}"
+    Width="100"
+    ToolTip="Quay về đăng nhập" Click="btHuy_Click">
+                    Hủy bỏ
+                </Button>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>

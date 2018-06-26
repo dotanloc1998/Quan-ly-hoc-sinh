@@ -1,0 +1,209 @@
+﻿<Window x:Class="HSM2.DangKy"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HSM2"
+        mc:Ignorable="d"
+        Title="Đăng ký" Height="800" Width="950"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        Background="{DynamicResource MaterialDesignPaper}" BorderThickness="5" BorderBrush="Black"
+        FontFamily="{DynamicResource MaterialDesignFont}" ResizeMode="NoResize" WindowStyle="None" WindowStartupLocation="CenterScreen">
+    
+    <Grid>
+        <Grid.Background>
+            <ImageBrush x:Name="hinh1DangKy" ></ImageBrush>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="12*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <materialDesign:ColorZone MouseLeftButtonDown="TitleBar_MouseLeftButtonDown" Name="TitleBar" Grid.Row="0"
+  Mode="Inverted" Height="50" >
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <TextBlock VerticalAlignment="Center" Margin="30,0,0,0"   Grid.Column="0"
+                           Style="{StaticResource MaterialDesignHeadlineTextBlock}">
+                    Đăng ký
+                </TextBlock>
+                <StackPanel Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Center" Height="30"
+                            Orientation="Horizontal">
+
+                    <Button Name="btThuNho" materialDesign:RippleAssist.IsDisabled="True" BorderBrush="Black" Background="Black" ToolTip="Thu nhỏ" Margin="0,0,5,0" HorizontalAlignment="Right" Click="btThuNho_Click" MouseEnter="btThuNho_MouseEnter" MouseLeave="btThuNho_MouseLeave">
+                        <materialDesign:PackIcon Kind="WindowMinimize"></materialDesign:PackIcon>
+                    </Button>
+                    <Button Name="btDong" materialDesign:RippleAssist.IsDisabled="True" BorderBrush="Black" Background="Black" ToolTip="Đóng" Margin="0,0,5,0" HorizontalAlignment="Right" Click="btDong_Click" MouseEnter="btDong_MouseEnter" MouseLeave="btDong_MouseLeave">
+                        <materialDesign:PackIcon Kind="WindowClose"></materialDesign:PackIcon>
+                    </Button>
+                </StackPanel>
+            </Grid>
+        </materialDesign:ColorZone>
+        <Grid Grid.Row="1">
+            <materialDesign:Card Opacity="0.84" Margin="10" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition Height="2*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition Width="3*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Image Grid.Column="0" Name="hinhLogo" HorizontalAlignment="Left" Margin="10,10,0,9.6" Width="170"></Image>
+                        <Grid Grid.Column="1">
+                            <Grid.RowDefinitions>
+                                <RowDefinition></RowDefinition>
+                                <RowDefinition></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <TextBlock  Grid.Row="0" VerticalAlignment="Bottom" HorizontalAlignment="Center"
+                        Style="{StaticResource MaterialDesignDisplay2TextBlock}">
+                        Đăng ký tài khoản giáo viên
+                            </TextBlock>
+                            <TextBlock  Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Center"
+                        Style="{StaticResource MaterialDesignDisplay2TextBlock}">
+                        THPT Trưng Vương
+                            </TextBlock>
+                        </Grid>
+
+                    </Grid>
+                    <Grid Grid.Row="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+
+                        <Grid Grid.Column="0" Grid.Row="0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition ></ColumnDefinition>
+                                <ColumnDefinition Width="10*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <!-- Text Họ -->
+                            <TextBox Grid.Column="1" TabIndex="0" FontSize="20" Name="txtHoTenGV" GotFocus="TxtHoTenGV_OnGotFocus" LostFocus="TxtHoTenGV_OnLostFocus" TextChanged="TxtHoTenGV_OnTextChanged" Margin="10"
+                                 materialDesign:HintAssist.Hint="Họ và tên"
+                                 Style="{StaticResource MaterialDesignFloatingHintTextBox}">
+                            </TextBox>
+                            <materialDesign:PackIcon Width="35" Height="45" Kind="RenameBox"  Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="13,42,0,10"/>
+                        </Grid>
+
+                        <Grid Grid.Column="1" Grid.Row="0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition ></ColumnDefinition>
+                                <ColumnDefinition Width="10*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <!-- Text SĐT -->
+                            <TextBox Grid.Column="1" TabIndex="1" FontSize="20" TextChanged="TxtSDTGV_OnTextChanged" LostFocus="TxtSDTGV_OnLostFocus" GotFocus="TxtSDTGV_OnGotFocus" Name="txtSDTGV" Margin="10" 
+                                 materialDesign:HintAssist.Hint="Số điện thoại"
+                                 Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+                            <materialDesign:PackIcon Width="35" Height="45" Kind="Cellphone"  Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="13,42,0,10"/>
+                        </Grid>
+                        <Grid Grid.Column="0" Grid.Row="1">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition ></ColumnDefinition>
+                                <ColumnDefinition Width="10*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <!-- Text DiaChi -->
+                            <TextBox Grid.Column="1" TabIndex="2" FontSize="20" LostFocus="TxtDCGV_OnLostFocus" GotFocus="TxtDCGV_OnGotFocus" TextChanged="TxtDCGV_OnTextChanged" Name="txtDCGV" Margin="10"
+                                 materialDesign:HintAssist.Hint="Địa chỉ"
+                                 Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+                            <Image Source="image/map-marker.png" Width="35" Height="45"  Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="13,42,0,10"></Image>
+                        </Grid>
+                        <Grid  Grid.Column="1" Grid.Row="1">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition ></ColumnDefinition>
+                                <ColumnDefinition Width="10*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <!-- Text Quê quán -->
+                            <TextBox Grid.Column="1" TabIndex="3" FontSize="20" TextChanged="TxtQueQuanGV_OnTextChanged" LostFocus="TxtQueQuanGV_OnLostFocus" GotFocus="TxtQueQuanGV_OnGotFocus" Name="txtQueQuanGV" Margin="10"
+                                 materialDesign:HintAssist.Hint="Quê quán"
+                                 Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+                            <materialDesign:PackIcon Width="35" Height="45" Kind="Home"  Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="13,42,0,10"/>
+                        </Grid>
+                        <Grid Grid.Row="2" Grid.Column="0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition ></ColumnDefinition>
+                                <ColumnDefinition Width="10*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <!--Date Picker Ngay Sinh-->
+                            <DatePicker Grid.Column="1" LostFocus="DpNgaySinhGV_OnLostFocus" GotFocus="DpNgaySinhGV_OnGotFocus" TextInput="DpNgaySinhGV_OnTextInput" TabIndex="4" FontSize="20"  Name="dpNgaySinhGV"
+                                    Margin="10" Height="32" VerticalAlignment="Bottom" 
+                                    materialDesign:HintAssist.Hint="Ngày sinh"
+                                    Style="{StaticResource MaterialDesignFloatingHintDatePicker}" />
+                            <Image Source="image/calendar-blank.png" Width="35" Height="45" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="13,42,0,10"></Image>
+                        </Grid>
+                        
+                        <Grid Grid.Row="2" Grid.Column="1">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition ></ColumnDefinition>
+                                <ColumnDefinition Width="10*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <!--Text Tên đăng nhập-->
+                            <TextBox Grid.Column="1" LostFocus="TxtLopChuNhiem_OnLostFocus" GotFocus="TxtLopChuNhiem_OnGotFocus" TextChanged="TxtLopChuNhiem_OnTextChanged" TabIndex="5" FontSize="20" Margin="10" Name="txtLopChuNhiem" 
+                                 materialDesign:HintAssist.Hint="Lớp chủ nhiệm"
+                                 Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+                            <Image Grid.Column="0" Source="image/lead-pencil.png" Height="45" Width="35" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0"></Image>
+
+                        </Grid>
+                        
+                        <Grid Grid.Row="3" Grid.Column="0" >
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition ></ColumnDefinition>
+                                <ColumnDefinition Width="10*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <!--Text Mật khẩu-->
+                            <PasswordBox Grid.Column="1" TextInput="TxtMatKhau_OnTextInput" LostFocus="TxtMatKhau_OnLostFocus" GotFocus="TxtMatKhau_OnGotFocus" TabIndex="6" FontSize="20"
+                                     x:Name="txtMatKhau" Margin="10"
+                                     materialDesign:HintAssist.Hint="Mật khẩu"
+                                     Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" />
+                            <materialDesign:PackIcon Width="30" Height="45" Kind="Key"  Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="13,42,0,10"/>
+                        </Grid>
+                        <Grid  Grid.Row="3" Grid.Column="1">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition ></ColumnDefinition>
+                                <ColumnDefinition Width="10*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <!--Text Nhập lại mật khẩu-->
+                            <PasswordBox Grid.Column="1" TextInput="TxtNhapLaiMatKhau_OnTextInput" LostFocus="TxtNhapLaiMatKhau_OnLostFocus" GotFocus="TxtNhapLaiMatKhau_OnGotFocus" TabIndex="7" FontSize="20" Margin="10"
+                                     x:Name="txtNhapLaiMatKhau" 
+                                     materialDesign:HintAssist.Hint="Nhập lại mật khẩu"
+                                     Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" />
+                            <materialDesign:PackIcon Width="30" Height="45" Kind="Key"  Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="13,42,0,10"/>
+                        </Grid>
+
+                        <Button Name="btChapNhan" TabIndex="8" Grid.Column="0" Grid.Row="4" HorizontalAlignment="Center" VerticalAlignment="Center"
+                            Style="{StaticResource MaterialDesignRaisedAccentButton}"
+                        Width="185" Height="55" Margin="10"
+                        ToolTip="Hoàn thành đăng ký" Click="btChapNhan_Click">
+                            Chấp nhận
+                        </Button>
+                        <Button 
+                        Background="DarkRed" Name="btHuyBo" TabIndex="9" Grid.Column="1" Grid.Row="4" HorizontalAlignment="Center" VerticalAlignment="Center"
+                        Style="{StaticResource MaterialDesignRaisedDarkButton}"
+                        Width="185" Height="55" Margin="10"
+                        ToolTip="Hủy bỏ đăng ký" Click="btHuyBo_Click" >
+                            Hủy bỏ
+                        </Button>
+                    </Grid>
+                </Grid>
+            </materialDesign:Card>
+
+        </Grid>
+    </Grid>
+</Window>

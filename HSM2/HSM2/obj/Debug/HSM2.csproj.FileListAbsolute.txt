@@ -1,0 +1,229 @@
+E:\Education\Nam II\HKII\Lập trình Windows\Thực hành\HighSchoolManager2\HSM2\HSM2\bin\Debug\HSM2.exe.config
+E:\Education\Nam II\HKII\Lập trình Windows\Thực hành\HighSchoolManager2\HSM2\HSM2\bin\Debug\HSM2.exe
+E:\Education\Nam II\HKII\Lập trình Windows\Thực hành\HighSchoolManager2\HSM2\HSM2\bin\Debug\HSM2.pdb
+E:\Education\Nam II\HKII\Lập trình Windows\Thực hành\HighSchoolManager2\HSM2\HSM2\bin\Debug\MaterialDesignColors.dll
+E:\Education\Nam II\HKII\Lập trình Windows\Thực hành\HighSchoolManager2\HSM2\HSM2\bin\Debug\MaterialDesignThemes.Wpf.dll
+E:\Education\Nam II\HKII\Lập trình Windows\Thực hành\HighSchoolManager2\HSM2\HSM2\bin\Debug\MaterialDesignColors.pdb
+E:\Education\Nam II\HKII\Lập trình Windows\Thực hành\HighSchoolManager2\HSM2\HSM2\bin\Debug\MaterialDesignThemes.Wpf.pdb
+E:\Education\Nam II\HKII\Lập trình Windows\Thực hành\HighSchoolManager2\HSM2\HSM2\bin\Debug\MaterialDesignThemes.Wpf.xml
+E:\Education\Nam II\HKII\Lập trình Windows\Thực hành\HighSchoolManager2\HSM2\HSM2\obj\Debug\HSM2.csprojResolveAssemblyReference.cache
+E:\Education\Nam II\HKII\Lập trình Windows\Thực hành\HighSchoolManager2\HSM2\HSM2\obj\Debug\MainWindow.g.cs
+E:\Education\Nam II\HKII\Lập trình Windows\Thực hành\HighSchoolManager2\HSM2\HSM2\obj\Debug\App.g.cs
+E:\Education\Nam II\HKII\Lập trình Windows\Thực hành\HighSchoolManager2\HSM2\HSM2\obj\Debug\HSM2_MarkupCompile.cache
+E:\Education\Nam II\HKII\Lập trình Windows\Thực hành\HighSchoolManager2\HSM2\HSM2\obj\Debug\HSM2_MarkupCompile.lref
+E:\Education\Nam II\HKII\Lập trình Windows\Thực hành\HighSchoolManager2\HSM2\HSM2\obj\Debug\App.baml
+E:\Education\Nam II\HKII\Lập trình Windows\Thực hành\HighSchoolManager2\HSM2\HSM2\obj\Debug\MainWindow.baml
+E:\Education\Nam II\HKII\Lập trình Windows\Thực hành\HighSchoolManager2\HSM2\HSM2\obj\Debug\HSM2.g.resources
+E:\Education\Nam II\HKII\Lập trình Windows\Thực hành\HighSchoolManager2\HSM2\HSM2\obj\Debug\HSM2.Properties.Resources.resources
+E:\Education\Nam II\HKII\Lập trình Windows\Thực hành\HighSchoolManager2\HSM2\HSM2\obj\Debug\HSM2.csproj.GenerateResource.cache
+E:\Education\Nam II\HKII\Lập trình Windows\Thực hành\HighSchoolManager2\HSM2\HSM2\obj\Debug\HSM2.csproj.CoreCompileInputs.cache
+E:\Education\Nam II\HKII\Lập trình Windows\Thực hành\HighSchoolManager2\HSM2\HSM2\obj\Debug\HSM2.csproj.CopyComplete
+E:\Education\Nam II\HKII\Lập trình Windows\Thực hành\HighSchoolManager2\HSM2\HSM2\obj\Debug\HSM2.exe
+E:\Education\Nam II\HKII\Lập trình Windows\Thực hành\HighSchoolManager2\HSM2\HSM2\obj\Debug\HSM2.pdb
+E:\Education\Nam II\HKII\Lập trình Windows\Thực hành\HighSchoolManager2\HSM2\HSM2\obj\Debug\DangKy.g.cs
+E:\Education\Nam II\HKII\Lập trình Windows\Thực hành\HighSchoolManager2\HSM2\HSM2\obj\Debug\DangKy.baml
+E:\Education\Nam II\HKII\Lập trình Windows\Thực hành\HighSchoolManager2\HSM2\HSM2\bin\Debug\ControlzEx.dll
+E:\Education\Nam II\HKII\Lập trình Windows\Thực hành\HighSchoolManager2\HSM2\HSM2\bin\Debug\MahApps.Metro.dll
+E:\Education\Nam II\HKII\Lập trình Windows\Thực hành\HighSchoolManager2\HSM2\HSM2\bin\Debug\MaterialDesignThemes.MahApps.dll
+E:\Education\Nam II\HKII\Lập trình Windows\Thực hành\HighSchoolManager2\HSM2\HSM2\bin\Debug\System.Windows.Interactivity.dll
+E:\Education\Nam II\HKII\Lập trình Windows\Thực hành\HighSchoolManager2\HSM2\HSM2\bin\Debug\ControlzEx.pdb
+E:\Education\Nam II\HKII\Lập trình Windows\Thực hành\HighSchoolManager2\HSM2\HSM2\bin\Debug\MahApps.Metro.pdb
+E:\Education\Nam II\HKII\Lập trình Windows\Thực hành\HighSchoolManager2\HSM2\HSM2\bin\Debug\MahApps.Metro.xml
+E:\Education\Đồ án\HighSchoolManager2\HSM2\HSM2\bin\Debug\HSM2.exe.config
+E:\Education\Đồ án\HighSchoolManager2\HSM2\HSM2\bin\Debug\HSM2.exe
+E:\Education\Đồ án\HighSchoolManager2\HSM2\HSM2\bin\Debug\HSM2.pdb
+E:\Education\Đồ án\HighSchoolManager2\HSM2\HSM2\bin\Debug\ControlzEx.dll
+E:\Education\Đồ án\HighSchoolManager2\HSM2\HSM2\bin\Debug\MahApps.Metro.dll
+E:\Education\Đồ án\HighSchoolManager2\HSM2\HSM2\bin\Debug\MaterialDesignColors.dll
+E:\Education\Đồ án\HighSchoolManager2\HSM2\HSM2\bin\Debug\MaterialDesignThemes.MahApps.dll
+E:\Education\Đồ án\HighSchoolManager2\HSM2\HSM2\bin\Debug\MaterialDesignThemes.Wpf.dll
+E:\Education\Đồ án\HighSchoolManager2\HSM2\HSM2\bin\Debug\System.Windows.Interactivity.dll
+E:\Education\Đồ án\HighSchoolManager2\HSM2\HSM2\bin\Debug\ControlzEx.pdb
+E:\Education\Đồ án\HighSchoolManager2\HSM2\HSM2\bin\Debug\MahApps.Metro.pdb
+E:\Education\Đồ án\HighSchoolManager2\HSM2\HSM2\bin\Debug\MahApps.Metro.xml
+E:\Education\Đồ án\HighSchoolManager2\HSM2\HSM2\bin\Debug\MaterialDesignColors.pdb
+E:\Education\Đồ án\HighSchoolManager2\HSM2\HSM2\bin\Debug\MaterialDesignThemes.Wpf.pdb
+E:\Education\Đồ án\HighSchoolManager2\HSM2\HSM2\bin\Debug\MaterialDesignThemes.Wpf.xml
+E:\Education\Đồ án\HighSchoolManager2\HSM2\HSM2\obj\Debug\HSM2.csprojResolveAssemblyReference.cache
+E:\Education\Đồ án\HighSchoolManager2\HSM2\HSM2\obj\Debug\CuaSoChinh.g.cs
+E:\Education\Đồ án\HighSchoolManager2\HSM2\HSM2\obj\Debug\DangKy.g.cs
+E:\Education\Đồ án\HighSchoolManager2\HSM2\HSM2\obj\Debug\MainWindow.g.cs
+E:\Education\Đồ án\HighSchoolManager2\HSM2\HSM2\obj\Debug\App.g.cs
+E:\Education\Đồ án\HighSchoolManager2\HSM2\HSM2\obj\Debug\HSM2_MarkupCompile.cache
+E:\Education\Đồ án\HighSchoolManager2\HSM2\HSM2\obj\Debug\HSM2_MarkupCompile.lref
+E:\Education\Đồ án\HighSchoolManager2\HSM2\HSM2\obj\Debug\App.baml
+E:\Education\Đồ án\HighSchoolManager2\HSM2\HSM2\obj\Debug\DangKy.baml
+E:\Education\Đồ án\HighSchoolManager2\HSM2\HSM2\obj\Debug\MainWindow.baml
+E:\Education\Đồ án\HighSchoolManager2\HSM2\HSM2\obj\Debug\CuaSoChinh.baml
+E:\Education\Đồ án\HighSchoolManager2\HSM2\HSM2\obj\Debug\HSM2.g.resources
+E:\Education\Đồ án\HighSchoolManager2\HSM2\HSM2\obj\Debug\HSM2.Properties.Resources.resources
+E:\Education\Đồ án\HighSchoolManager2\HSM2\HSM2\obj\Debug\HSM2.csproj.GenerateResource.cache
+E:\Education\Đồ án\HighSchoolManager2\HSM2\HSM2\obj\Debug\HSM2.csproj.CoreCompileInputs.cache
+E:\Education\Đồ án\HighSchoolManager2\HSM2\HSM2\obj\Debug\HSM2.csproj.CopyComplete
+E:\Education\Đồ án\HighSchoolManager2\HSM2\HSM2\obj\Debug\HSM2.exe
+E:\Education\Đồ án\HighSchoolManager2\HSM2\HSM2\obj\Debug\HSM2.pdb
+E:\Education\Nam II\HKII\Lập trình Windows\Thực hành\HighSchoolManager2\HSM2\HSM2\obj\Debug\CuaSoChinh.g.cs
+E:\Education\Nam II\HKII\Lập trình Windows\Thực hành\HighSchoolManager2\HSM2\HSM2\obj\Debug\CuaSoChinh.baml
+E:\Education\Đồ án\HighSchoolManager2\HSM2\HSM2\obj\Debug\LopChuNhiem.g.cs
+E:\Education\Đồ án\HighSchoolManager2\HSM2\HSM2\obj\Debug\LopChuNhiem.baml
+E:\Education\Nam II\HKII\Lập trình Windows\Thực hành\HighSchoolManager2\HSM2\HSM2\obj\Debug\LopChuNhiem.g.cs
+E:\Education\Nam II\HKII\Lập trình Windows\Thực hành\HighSchoolManager2\HSM2\HSM2\obj\Debug\LopChuNhiem.baml
+E:\Education\Đồ án\HighSchoolManager2\HSM2\HSM2\obj\Debug\ThemHocSinh.g.cs
+E:\Education\Đồ án\HighSchoolManager2\HSM2\HSM2\obj\Debug\ThemHocSinh.baml
+E:\Education\Đồ án\HighSchoolManager2\HSM2\HSM2\obj\Debug\LopDay.g.cs
+E:\Education\Đồ án\HighSchoolManager2\HSM2\HSM2\obj\Debug\LopDay.baml
+E:\Education\Đồ án\HighSchoolManager2\HSM2\HSM2\obj\Debug\InTheoLoai.g.cs
+E:\Education\Đồ án\HighSchoolManager2\HSM2\HSM2\obj\Debug\InTheoLoai.baml
+E:\Education\Nam II\HKII\Lập trình Windows\Thực hành\HighSchoolManager2\HSM2\HSM2\obj\Debug\InTheoLoai.g.cs
+E:\Education\Nam II\HKII\Lập trình Windows\Thực hành\HighSchoolManager2\HSM2\HSM2\obj\Debug\LopDay.g.cs
+E:\Education\Nam II\HKII\Lập trình Windows\Thực hành\HighSchoolManager2\HSM2\HSM2\obj\Debug\ThemHocSinh.g.cs
+E:\Education\Nam II\HKII\Lập trình Windows\Thực hành\HighSchoolManager2\HSM2\HSM2\obj\Debug\InTheoLoai.baml
+E:\Education\Nam II\HKII\Lập trình Windows\Thực hành\HighSchoolManager2\HSM2\HSM2\obj\Debug\LopDay.baml
+E:\Education\Nam II\HKII\Lập trình Windows\Thực hành\HighSchoolManager2\HSM2\HSM2\obj\Debug\ThemHocSinh.baml
+E:\Education\Đồ án\HighSchoolManager2\HSM2\HSM2\obj\Debug\ThongTinGiaoVien.g.cs
+E:\Education\Đồ án\HighSchoolManager2\HSM2\HSM2\obj\Debug\ThongTinGiaoVien.baml
+E:\Education\Đồ án\HighSchoolManager\HSM2\HSM2\bin\Debug\HSM2.exe.config
+E:\Education\Đồ án\HighSchoolManager\HSM2\HSM2\bin\Debug\HSM2.exe
+E:\Education\Đồ án\HighSchoolManager\HSM2\HSM2\bin\Debug\HSM2.pdb
+E:\Education\Đồ án\HighSchoolManager\HSM2\HSM2\bin\Debug\ControlzEx.dll
+E:\Education\Đồ án\HighSchoolManager\HSM2\HSM2\bin\Debug\MahApps.Metro.dll
+E:\Education\Đồ án\HighSchoolManager\HSM2\HSM2\bin\Debug\MaterialDesignColors.dll
+E:\Education\Đồ án\HighSchoolManager\HSM2\HSM2\bin\Debug\MaterialDesignThemes.MahApps.dll
+E:\Education\Đồ án\HighSchoolManager\HSM2\HSM2\bin\Debug\MaterialDesignThemes.Wpf.dll
+E:\Education\Đồ án\HighSchoolManager\HSM2\HSM2\bin\Debug\System.Windows.Interactivity.dll
+E:\Education\Đồ án\HighSchoolManager\HSM2\HSM2\bin\Debug\ControlzEx.pdb
+E:\Education\Đồ án\HighSchoolManager\HSM2\HSM2\bin\Debug\MahApps.Metro.pdb
+E:\Education\Đồ án\HighSchoolManager\HSM2\HSM2\bin\Debug\MahApps.Metro.xml
+E:\Education\Đồ án\HighSchoolManager\HSM2\HSM2\bin\Debug\MaterialDesignColors.pdb
+E:\Education\Đồ án\HighSchoolManager\HSM2\HSM2\bin\Debug\MaterialDesignThemes.Wpf.pdb
+E:\Education\Đồ án\HighSchoolManager\HSM2\HSM2\bin\Debug\MaterialDesignThemes.Wpf.xml
+E:\Education\Đồ án\HighSchoolManager\HSM2\HSM2\obj\Debug\HSM2.csprojResolveAssemblyReference.cache
+E:\Education\Đồ án\HighSchoolManager\HSM2\HSM2\obj\Debug\CuaSoChinh.g.cs
+E:\Education\Đồ án\HighSchoolManager\HSM2\HSM2\obj\Debug\DangKy.g.cs
+E:\Education\Đồ án\HighSchoolManager\HSM2\HSM2\obj\Debug\LopChuNhiem.g.cs
+E:\Education\Đồ án\HighSchoolManager\HSM2\HSM2\obj\Debug\LopDay.g.cs
+E:\Education\Đồ án\HighSchoolManager\HSM2\HSM2\obj\Debug\MainWindow.g.cs
+E:\Education\Đồ án\HighSchoolManager\HSM2\HSM2\obj\Debug\ThemHocSinh.g.cs
+E:\Education\Đồ án\HighSchoolManager\HSM2\HSM2\obj\Debug\ThongTinGiaoVien.g.cs
+E:\Education\Đồ án\HighSchoolManager\HSM2\HSM2\obj\Debug\App.g.cs
+E:\Education\Đồ án\HighSchoolManager\HSM2\HSM2\obj\Debug\HSM2_MarkupCompile.cache
+E:\Education\Đồ án\HighSchoolManager\HSM2\HSM2\obj\Debug\HSM2_MarkupCompile.lref
+E:\Education\Đồ án\HighSchoolManager\HSM2\HSM2\obj\Debug\App.baml
+E:\Education\Đồ án\HighSchoolManager\HSM2\HSM2\obj\Debug\CuaSoChinh.baml
+E:\Education\Đồ án\HighSchoolManager\HSM2\HSM2\obj\Debug\DangKy.baml
+E:\Education\Đồ án\HighSchoolManager\HSM2\HSM2\obj\Debug\LopChuNhiem.baml
+E:\Education\Đồ án\HighSchoolManager\HSM2\HSM2\obj\Debug\LopDay.baml
+E:\Education\Đồ án\HighSchoolManager\HSM2\HSM2\obj\Debug\MainWindow.baml
+E:\Education\Đồ án\HighSchoolManager\HSM2\HSM2\obj\Debug\ThemHocSinh.baml
+E:\Education\Đồ án\HighSchoolManager\HSM2\HSM2\obj\Debug\ThongTinGiaoVien.baml
+E:\Education\Đồ án\HighSchoolManager\HSM2\HSM2\obj\Debug\HSM2.g.resources
+E:\Education\Đồ án\HighSchoolManager\HSM2\HSM2\obj\Debug\HSM2.Properties.Resources.resources
+E:\Education\Đồ án\HighSchoolManager\HSM2\HSM2\obj\Debug\HSM2.csproj.GenerateResource.cache
+E:\Education\Đồ án\HighSchoolManager\HSM2\HSM2\obj\Debug\HSM2.csproj.CoreCompileInputs.cache
+E:\Education\Đồ án\HighSchoolManager\HSM2\HSM2\obj\Debug\HSM2.csproj.CopyComplete
+E:\Education\Đồ án\HighSchoolManager\HSM2\HSM2\obj\Debug\HSM2.exe
+E:\Education\Đồ án\HighSchoolManager\HSM2\HSM2\obj\Debug\HSM2.pdb
+E:\Education\Đồ án\HighSchoolManager\HSM2\HSM2\obj\Debug\VeChungToi.g.cs
+E:\Education\Đồ án\HighSchoolManager\HSM2\HSM2\obj\Debug\VeChungToi.baml
+E:\Education\Đồ án\HighSchoolManager\HSM2\HSM2\obj\Debug\CaiDat.g.cs
+E:\Education\Đồ án\HighSchoolManager\HSM2\HSM2\obj\Debug\CaiDat.baml
+E:\Education\Đồ án\HighSchoolManager\HSM2\HSM2\obj\Debug\QuenMatKhau.g.cs
+E:\Education\Đồ án\HighSchoolManager\HSM2\HSM2\obj\Debug\QuenMatKhau.baml
+E:\Education\Đồ án\HighSchoolManager\HSM2\HSM2\obj\Debug\ChonLoaiIn.g.cs
+E:\Education\Đồ án\HighSchoolManager\HSM2\HSM2\obj\Debug\ChonLoaiIn.baml
+E:\Education\Đồ án\HighSchoolManager\HSM2\HSM2\bin\Debug\EntityFramework.dll
+E:\Education\Đồ án\HighSchoolManager\HSM2\HSM2\bin\Debug\EntityFramework.SqlServer.dll
+E:\Education\Đồ án\HighSchoolManager\HSM2\HSM2\bin\Debug\EntityFramework.xml
+E:\Education\Đồ án\HighSchoolManager\HSM2\HSM2\bin\Debug\EntityFramework.SqlServer.xml
+E:\Education\Đồ án\HighSchoolManager\HSM2\HSM2\obj\Debug\ThemDiem.g.cs
+E:\Education\Đồ án\HighSchoolManager\HSM2\HSM2\obj\Debug\ThemDiem.baml
+E:\Education\Đồ án\HighSchoolManager\HSM2\HSM2\obj\Debug\HSM2.Migrations.createdb.resources
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\bin\Debug\HSM2.exe.config
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\bin\Debug\HSM2.exe
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\bin\Debug\HSM2.pdb
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\bin\Debug\ControlzEx.dll
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\bin\Debug\EntityFramework.dll
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\bin\Debug\MahApps.Metro.dll
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\bin\Debug\MaterialDesignColors.dll
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\bin\Debug\MaterialDesignThemes.MahApps.dll
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\bin\Debug\ControlzEx.pdb
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\bin\Debug\EntityFramework.xml
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\bin\Debug\MahApps.Metro.pdb
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\bin\Debug\MahApps.Metro.xml
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\bin\Debug\MaterialDesignColors.pdb
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\obj\Debug\CaiDat.g.cs
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\obj\Debug\CuaSoChinh.g.cs
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\obj\Debug\DangKy.g.cs
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\obj\Debug\LopChuNhiem.g.cs
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\obj\Debug\LopDay.g.cs
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\obj\Debug\MainWindow.g.cs
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\obj\Debug\QuenMatKhau.g.cs
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\obj\Debug\ThemDiem.g.cs
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\obj\Debug\ThemHocSinh.g.cs
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\obj\Debug\ThongTinGiaoVien.g.cs
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\obj\Debug\VeChungToi.g.cs
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\obj\Debug\App.g.cs
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\obj\Debug\HSM2_MarkupCompile.cache
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\obj\Debug\HSM2_MarkupCompile.lref
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\obj\Debug\App.baml
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\obj\Debug\CaiDat.baml
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\obj\Debug\CuaSoChinh.baml
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\obj\Debug\DangKy.baml
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\obj\Debug\LopChuNhiem.baml
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\obj\Debug\LopDay.baml
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\obj\Debug\MainWindow.baml
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\obj\Debug\QuenMatKhau.baml
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\obj\Debug\ThemDiem.baml
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\obj\Debug\ThemHocSinh.baml
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\obj\Debug\ThongTinGiaoVien.baml
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\obj\Debug\VeChungToi.baml
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\obj\Debug\HSM2.g.resources
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\obj\Debug\HSM2.Properties.Resources.resources
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\obj\Debug\HSM2.csproj.GenerateResource.cache
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\obj\Debug\HSM2.csproj.CoreCompileInputs.cache
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\obj\Debug\HSM2.csproj.CopyComplete
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\obj\Debug\HSM2.exe
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\obj\Debug\HSM2.pdb
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\obj\Debug\HSM2.csproj.ResolveComReference.cache
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\obj\Debug\XemNangCao.g.cs
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\obj\Debug\XemNangCao.baml
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\obj\Debug\GiaoDienInThongTin.g.cs
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\bin\Debug\CrystalDecisions.ReportSource.dll
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\bin\Debug\CrystalDecisions.Shared.dll
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\bin\Debug\sapbusinessobjects.wpf.viewer.dll
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\bin\Debug\SAPBusinessObjects.WPF.ViewerShared.dll
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\bin\Debug\FlashControlV71.dll
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\bin\Debug\ShockwaveFlashObjects.dll
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\bin\Debug\stdole.dll
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\obj\Debug\GiaoDienInThongTin.baml
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\obj\Debug\HSM2.Migrations.createdb.resources
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\obj\Debug\ChonLop.g.cs
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\obj\Debug\ChonLop.baml
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\obj\Debug\HSM2.csprojAssemblyReference.cache
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\obj\Debug\AdminDangNhap.g.cs
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\obj\Debug\AdminDangNhap.baml
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\obj\Debug\Admin.g.cs
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\obj\Debug\Admin.baml
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\obj\Debug\AdminXoa.g.cs
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\obj\Debug\ChonLoaiXemAdmin.g.cs
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\obj\Debug\AdminXoa.baml
+C:\Users\thuyl\OneDrive\HighSchoolManager\HSM2\HSM2\obj\Debug\ChonLoaiXemAdmin.baml

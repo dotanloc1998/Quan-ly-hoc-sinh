@@ -1,0 +1,209 @@
+﻿<Window x:Class="HSM2.ThemHocSinh"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HSM2"
+        mc:Ignorable="d"
+        Title="ThemHocSinh" Height="550" Width="800"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+     TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+     TextElement.FontWeight="Regular"
+     TextElement.FontSize="13"
+     TextOptions.TextFormattingMode="Ideal"
+     TextOptions.TextRenderingMode="Auto"
+     Background="{DynamicResource MaterialDesignPaper}" BorderThickness="5" BorderBrush="Black"
+     FontFamily="{DynamicResource MaterialDesignFont}"  ResizeMode="NoResize" WindowStyle="None" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="image/1403426_530014467091446_1823878259_o.jpg"></ImageBrush>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="5*"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <materialDesign:ColorZone MouseLeftButtonDown="TitleBar_MouseLeftButtonDown" Name="TitleBar"   Grid.Row="0" Height="60" Mode="Inverted" >
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <TextBlock VerticalAlignment="Center" Margin="30,0,0,0" HorizontalAlignment="Left" Grid.Column="0"
+                           Style="{StaticResource MaterialDesignHeadlineTextBlock}">
+                    Thêm học sinh
+                </TextBlock>
+                <StackPanel Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Center" Height="30"
+                            Orientation="Horizontal">
+
+                    <Button Name="btThuNho" materialDesign:RippleAssist.IsDisabled="True" BorderBrush="Black" Background="Black" ToolTip="Thu nhỏ" Margin="0,0,5,0" HorizontalAlignment="Right" Click="btThuNho_Click" MouseEnter="btThuNho_MouseEnter" MouseLeave="btThuNho_MouseLeave">
+                        <materialDesign:PackIcon Kind="WindowMinimize"></materialDesign:PackIcon>
+                    </Button>
+                    <Button Name="btPhongTo" materialDesign:RippleAssist.IsDisabled="True" BorderBrush="Black" Background="Black" ToolTip="Thu/Phóng" Margin="0,0,5,0" HorizontalAlignment="Right" Click="btPhongTo_Click" MouseEnter="btPhongTo_MouseEnter" MouseLeave="btPhongTo_MouseLeave">
+                        <materialDesign:PackIcon Kind="WindowMaximize"></materialDesign:PackIcon>
+                    </Button>
+                    <Button Name="btDong" materialDesign:RippleAssist.IsDisabled="True" BorderBrush="Black" Background="Black" ToolTip="Đóng" Margin="0,0,5,0" HorizontalAlignment="Right" Click="btDong_Click" MouseEnter="btDong_MouseEnter" MouseLeave="btDong_MouseLeave">
+                        <materialDesign:PackIcon Kind="WindowClose"></materialDesign:PackIcon>
+                    </Button>
+                </StackPanel>
+            </Grid>
+        </materialDesign:ColorZone>
+
+
+        <materialDesign:Card Opacity="0.84" Margin="10,5,10,0" Grid.Row="1" VerticalAlignment="Stretch" >
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"></ColumnDefinition>
+                    <ColumnDefinition Width="0.5*"></ColumnDefinition>
+                    <ColumnDefinition Width="8*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Image Name="hinhLogo" Margin="15" VerticalAlignment="Top" Grid.Column="0"  Height="150" Width="112.5"/>
+                    <materialDesign:Badged Grid.Row="1" VerticalAlignment="Bottom" HorizontalAlignment="Center"
+  x:Name="CountingBadge"
+  BadgeColorZoneMode="PrimaryDark">
+                       
+                    </materialDesign:Badged>
+                </Grid>
+                <Grid Grid.Column="1">
+                    <Separator  Margin="0,20,0,20" Height="40" HorizontalAlignment="Center">
+                        <Separator.Effect>
+                            <DropShadowEffect BlurRadius="6" Direction="10" RenderingBias="Quality" ShadowDepth="5 "></DropShadowEffect>
+                        </Separator.Effect>
+                        <Separator.LayoutTransform>
+                            <RotateTransform Angle="90" />
+                        </Separator.LayoutTransform>
+                    </Separator>
+                </Grid>
+                <Grid Margin="5" Grid.Column="2">
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition Width="10*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <materialDesign:PackIcon Kind="Account" Width="25" Height="35"  Grid.Column="0" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="5"/>
+                        <TextBox Name="txtMaHS" Grid.Column="1" FontSize="17" FontWeight="Bold"
+  materialDesign:HintAssist.Hint="Mã số học sinh"
+  Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+                    </Grid>
+
+                    <Grid Grid.Row="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition Width="10*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <materialDesign:PackIcon Kind="RenameBox" Width="25" Height="35"  Grid.Column="0" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="5"/>
+
+                        <TextBox Name="txtHoTenHS" Grid.Column="1" FontSize="17" FontWeight="Bold"
+  materialDesign:HintAssist.Hint="Họ tên"
+  Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+                    </Grid>
+
+                    <Grid Grid.Row="2">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition Width="10*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="image/calendar-blank.png" Width="25" Height="35"  Grid.Column="0" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="5"></Image>
+
+                        <DatePicker Name="dpNgaySinhHS" Grid.Column="1" FontSize="17" FontWeight="Bold"
+  materialDesign:HintAssist.Hint="Ngày sinh" Height="28" VerticalAlignment="Bottom"
+  Style="{StaticResource MaterialDesignFloatingHintDatePicker}" />
+                    </Grid>
+
+                    <Grid Grid.Row="3">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition Width="10*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <materialDesign:PackIcon Width="25" Height="35"  Grid.Column="0" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="5" Kind="Approval" />
+                        <TextBox Name="txtHanhKiem" Grid.Column="1" FontSize="17" FontWeight="Bold"
+  materialDesign:HintAssist.Hint="Xếp loại hạnh kiểm"
+  Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+                    </Grid>
+
+                    <Grid Grid.Row="4">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition Width="10*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="image/map-marker.png" Width="25" Height="35"  Grid.Column="0" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="5"></Image>
+
+                        <TextBox Name="txtDiaChiHS" Grid.Column="1" FontSize="17" FontWeight="Bold"
+  materialDesign:HintAssist.Hint="Địa chỉ"
+  Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+                    </Grid>
+
+                    <Grid Grid.Row="5">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition Width="10*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                    </Grid>
+
+                    <Grid Grid.Row="5">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition Width="10*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <materialDesign:PackIcon Kind="Home" Width="25" Height="35"  Grid.Column="0" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="5"/>
+
+                        <TextBox Name="txtQueQuanHS" Grid.Column="1" FontSize="17" FontWeight="Bold"
+  materialDesign:HintAssist.Hint="Quê quán"
+  Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+                    </Grid>
+
+                    <Grid Grid.Row="6">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition Width="10*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Image Grid.Column="0" Source="image/book-open-page-variant.png" Width="25" Height="35" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="5"></Image>
+
+                        <Grid Grid.Column="1">
+                            <Button VerticalAlignment="Bottom" Name="btThemDiem" ToolTip="Thêm điểm học sinh" Margin="0,0,5,0" BorderBrush="Black" Background="Black" Click="btThemDiem_Click" >
+                                Thêm điểm cho học sinh
+                            </Button>
+                        </Grid>
+                    </Grid>
+
+                </Grid>
+            </Grid>
+        </materialDesign:Card>
+
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Button Name="btNhapFile" BorderBrush="LimeGreen" Background="LimeGreen" Grid.Column="0"
+    Style="{StaticResource MaterialDesignRaisedButton}"
+    Width="100"
+    ToolTip="Thêm nhiều học sinh" Click="btNhapFile_Click">
+                Nhập File
+            </Button>
+            <Button Name="btHuy" BorderBrush="DarkRed" Background="DarkRed" Grid.Column="1"
+    Style="{StaticResource MaterialDesignRaisedButton}"
+    Width="100"
+    ToolTip="Hủy thêm" Click="btHuy_Click">
+                Hủy bỏ
+            </Button>
+        </Grid>
+    </Grid>
+</Window>

@@ -1,0 +1,27 @@
+﻿<UserControl x:Class="HSM2.VeChungToi"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:HSM2"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+     TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+     TextElement.FontWeight="Regular"
+     TextElement.FontSize="13"
+     TextOptions.TextFormattingMode="Ideal"
+     TextOptions.TextRenderingMode="Auto"
+     Background="{DynamicResource MaterialDesignPaper}"
+     FontFamily="{DynamicResource MaterialDesignFont}">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush x:Name="hinh5" ></ImageBrush>
+        </Grid.Background>
+        <TextBlock Background="Wheat" VerticalAlignment="Center" HorizontalAlignment="Center">Giới thiệu Giới thiệu Giới thiệu 
+            
+        <LineBreak/>
+Giới thiệu Giới thiệu Giới thiệu
+        </TextBlock>
+    </Grid>
+</UserControl>
